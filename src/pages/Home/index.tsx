@@ -1,6 +1,6 @@
 import React from "react";
 import imagem from "assets/img/imagem1.png";
-import grupo from "assets/img/carrousel.png";
+import grupo from "assets/img/Groupo.png";
 import * as S from "./styles";
 import { CardComponent } from "components";
 import dados from "services/dados";
