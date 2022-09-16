@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const Home = styled.section`
+  picture {
+    display: flex
+  }
   picture > img {
     width: 100%;
   }

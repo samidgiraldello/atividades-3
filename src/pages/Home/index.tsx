@@ -12,9 +12,9 @@ const Home = () => {
         <img src={imagem} alt="Imagens principais" />
         <img src={grupo} alt="Imagens principais" />
       </picture>
-      <aside>
-        {dados && dados.map((item) => <CardComponent dados={item} />)}
-      </aside>
+      <h1>
+      Seu Diário Virtual para  guardar memórias de viagens incríveis e  compartilar experiências com amigos do mundo todo !!!
+      </h1>
     </S.Home>
   );
 };
