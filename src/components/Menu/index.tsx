@@ -1,10 +1,9 @@
 import React from "react";
-import { FcReuse } from "react-icons/fc";
+import logo from "asssts/img/logo.svg";
 import {GrLogout} from "react-icons/gr"
 import * as S from "./styles";
 import { Link, useNavigate} from "react-router-dom";
 import { useAuth } from "hooks/authHook";
-
 
 const Menu = () => {
   const { user, signOut } = useAuth()
@@ -17,7 +16,7 @@ const Menu = () => {
     <S.Cabecalho>
       <picture>
         <Link to="/">
-          <FcReuse />
+          <img src={logo} alt="Logo" />
         </Link>
       </picture>
       <nav>
