@@ -12,4 +12,7 @@ export const Home = styled.section`
     grid-template-columns: auto auto auto auto;
     gap: 0.5rem;
   }
+  h1 {
+    text-align: center;
+  }
 `
