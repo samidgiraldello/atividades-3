@@ -3,19 +3,19 @@ import api from "services/api";
 
 class ViagemData {
   index() {
-    return api.get<IViagemData[]>('/viagems')
+    return api.get<IViagemData[]>('/viagem')
   }
   store(data: IViagemForm) {
-    return api.post(`/viagems`, data)
+    return api.post(`/viagem`, data)
   }
   show(id: number) {
-    return api.get<IViagemData>(`/viagems/${id}`)
+    return api.get<IViagemData>(`/viagem/${id}`)
   }
   update(id: number, data: IViagemForm) {
-    return api.put(`/viagems/${id}`, data)
+    return api.put(`/viagem/${id}`, data)
   }
   destroy(id: number) {
-    return api.delete(`/viagems/${id}`)
+    return api.delete(`/viagem/${id}`)
   }
 }
 
