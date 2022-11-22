@@ -61,7 +61,7 @@ const AdmViagem = () => {
               <ButtonComponent
                 bgColor="add"
                 type="button"
-                onClick={() => navigate("/adm/viagem/0")}
+                onClick={() => navigate("/adm/mess/message/0")}
               >
                 <FcAddDatabase />
               </ButtonComponent>
@@ -70,8 +70,9 @@ const AdmViagem = () => {
               <thead>
                 <tr>
                   <th>Nome</th>
-                  <th>Título</th>
-                  <th>Mensagem</th>
+                  <th>Lugar</th>
+                  <th>Data</th>
+                  <th>Hotel</th>
                   <th>Editar</th>
                   <th>Remover</th>
                 </tr>

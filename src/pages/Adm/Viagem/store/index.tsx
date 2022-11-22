@@ -14,8 +14,10 @@ const ViagemStore = () => {
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   const [formData, setFormData] = useState<IViagemForm>({
-    title: '',
-    message: '',
+    Nome: '',
+    Lugar: '',
+    Data: '',
+    Hotel: '',
   })
   const { id } = useParams<{ id: string }>();
 
@@ -74,15 +76,29 @@ const ViagemStore = () => {
                 <FcUndo /> Voltar
               </Link>
               <div>
-                <label htmlFor="title">Título: </label>
-                <input type="text" id="title" placeholder="Escreva um título" required
+                <label htmlFor="title">Nome: </label>
+                <input type="text" id="title" placeholder="Escreva uma Data" required
                   onChange={(e) => handleChange({ title: e.target.value })}
                   value={formData?.title}
                 />
               </div>
               <div>
-                <label htmlFor="message">Mensagem: </label>
-                <textarea id="message" placeholder="Escreva uma mensagem" required
+                <label htmlFor="message">Lugar: </label>
+                <textarea id="message" placeholder="Escreva um Lugar" required
+                  onChange={(e) => handleChange({ message: e.target.value })}
+                  value={formData?.message}
+                />
+              </div>
+              <div>
+                <label htmlFor="message">Data: </label>
+                <textarea id="message" placeholder="Escreva um Lugar" required
+                  onChange={(e) => handleChange({ message: e.target.value })}
+                  value={formData?.message}
+                />
+              </div>
+              <div>
+                <label htmlFor="message">Hotel: </label>
+                <textarea id="message" placeholder="Escreva um Lugar" required
                   onChange={(e) => handleChange({ message: e.target.value })}
                   value={formData?.message}
                 />
