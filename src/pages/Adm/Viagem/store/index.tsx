@@ -76,28 +76,28 @@ const ViagemStore = () => {
                 <FcUndo /> Voltar
               </Link>
               <div>
-                <label htmlFor="title">Nome: </label>
-                <input type="text" id="title" placeholder="Escreva seu nome" required
-                  onChange={(e) => handleChange({ title: e.target.value })}
-                  value={formData?.title}
+                <label htmlFor="Nome">Nome: </label>
+                <input type="text" id="Nome" placeholder="Escreva seu nome" required
+                  onChange={(e) => handleChange({ Nome: e.target.value })}
+                  value={formData?.Nome}
                 />
               </div>
               <div>
-                <label htmlFor="message">Lugar: </label>
+                <label htmlFor="Lugar">Lugar: </label>
                 <textarea id="Lugar" placeholder="Escreva um Lugar" required
                   onChange={(e) => handleChange({Lugar: e.target.value })}
                   value={formData?.Lugar}
                 />
               </div>
               <div>
-                <label htmlFor="message">Data: </label>
+                <label htmlFor="Data">Data: </label>
                 <textarea id="Data" placeholder="Escreva uma Data" required
                   onChange={(e) => handleChange({ Data: e.target.value })}
                   value={formData?.Data}
                 />
               </div>
               <div>
-                <label htmlFor="message">Hotel: </label>
+                <label htmlFor="Hotel">Hotel: </label>
                 <textarea id="Hotel" placeholder="Escreva um Hotel" required
                   onChange={(e) => handleChange({ Hotel: e.target.value })}
                   value={formData?.Hotel}
