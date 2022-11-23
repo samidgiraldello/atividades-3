@@ -84,23 +84,23 @@ const ViagemStore = () => {
               </div>
               <div>
                 <label htmlFor="message">Lugar: </label>
-                <textarea id="message" placeholder="Escreva um Lugar" required
-                  onChange={(e) => handleChange({ message: e.target.value })}
-                  value={formData?.message}
+                <textarea id="Lugar" placeholder="Escreva um Lugar" required
+                  onChange={(e) => handleChange({Lugar: e.target.value })}
+                  value={formData?.Lugar}
                 />
               </div>
               <div>
                 <label htmlFor="message">Data: </label>
-                <textarea id="message" placeholder="Escreva uma Data" required
-                  onChange={(e) => handleChange({ message: e.target.value })}
-                  value={formData?.message}
+                <textarea id="Data" placeholder="Escreva uma Data" required
+                  onChange={(e) => handleChange({ Data: e.target.value })}
+                  value={formData?.Data}
                 />
               </div>
               <div>
                 <label htmlFor="message">Hotel: </label>
-                <textarea id="message" placeholder="Escreva um Hotel" required
-                  onChange={(e) => handleChange({ message: e.target.value })}
-                  value={formData?.message}
+                <textarea id="Hotel" placeholder="Escreva um Hotel" required
+                  onChange={(e) => handleChange({ Hotel: e.target.value })}
+                  value={formData?.Hotel}
                 />
               </div>
               <ButtonComponent bgColor="add" type="submit">
