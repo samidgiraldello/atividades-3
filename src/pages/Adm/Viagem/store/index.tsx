@@ -77,7 +77,7 @@ const ViagemStore = () => {
               </Link>
               <div>
                 <label htmlFor="title">Nome: </label>
-                <input type="text" id="title" placeholder="Escreva uma Data" required
+                <input type="text" id="title" placeholder="Escreva seu nome" required
                   onChange={(e) => handleChange({ title: e.target.value })}
                   value={formData?.title}
                 />
@@ -91,14 +91,14 @@ const ViagemStore = () => {
               </div>
               <div>
                 <label htmlFor="message">Data: </label>
-                <textarea id="message" placeholder="Escreva um Lugar" required
+                <textarea id="message" placeholder="Escreva uma Data" required
                   onChange={(e) => handleChange({ message: e.target.value })}
                   value={formData?.message}
                 />
               </div>
               <div>
                 <label htmlFor="message">Hotel: </label>
-                <textarea id="message" placeholder="Escreva um Lugar" required
+                <textarea id="message" placeholder="Escreva um Hotel" required
                   onChange={(e) => handleChange({ message: e.target.value })}
                   value={formData?.message}
                 />
