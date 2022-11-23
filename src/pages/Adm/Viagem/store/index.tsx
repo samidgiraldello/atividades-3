@@ -14,10 +14,10 @@ const ViagemStore = () => {
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   const [formData, setFormData] = useState<IViagemForm>({
-    Nome: '',
-    Lugar: '',
-    Data: '',
-    Hotel: '',
+    nome: '',
+    lugar: '',
+    data: '',
+    hotel: '',
   })
   const { id } = useParams<{ id: string }>();
 
@@ -76,31 +76,31 @@ const ViagemStore = () => {
                 <FcUndo /> Voltar
               </Link>
               <div>
-                <label htmlFor="Nome">Nome: </label>
-                <input type="text" id="Nome" placeholder="Escreva seu nome" required
-                  onChange={(e) => handleChange({ Nome: e.target.value })}
-                  value={formData?.Nome}
+                <label htmlFor="nome">Nome: </label>
+                <input type="text" id="nome" placeholder="Escreva seu nome" required
+                  onChange={(e) => handleChange({ nome: e.target.value })}
+                  value={formData?.nome}
                 />
               </div>
               <div>
-                <label htmlFor="Lugar">Lugar: </label>
-                <textarea id="Lugar" placeholder="Escreva um Lugar" required
-                  onChange={(e) => handleChange({Lugar: e.target.value })}
-                  value={formData?.Lugar}
+                <label htmlFor="lugar">Lugar: </label>
+                <textarea id="lugar" placeholder="Escreva um lugar" required
+                  onChange={(e) => handleChange({lugar: e.target.value })}
+                  value={formData?.lugar}
                 />
               </div>
               <div>
-                <label htmlFor="Data">Data: </label>
-                <textarea id="Data" placeholder="Escreva uma Data" required
-                  onChange={(e) => handleChange({ Data: e.target.value })}
-                  value={formData?.Data}
+                <label htmlFor="data">Data: </label>
+                <textarea id="data" placeholder="Escreva uma data" required
+                  onChange={(e) => handleChange({data: e.target.value })}
+                  value={formData?.data}
                 />
               </div>
               <div>
-                <label htmlFor="Hotel">Hotel: </label>
-                <textarea id="Hotel" placeholder="Escreva um Hotel" required
-                  onChange={(e) => handleChange({ Hotel: e.target.value })}
-                  value={formData?.Hotel}
+                <label htmlFor="hotel">Hotel: </label>
+                <textarea id="hotel" placeholder="Escreva um hotel" required
+                  onChange={(e) => handleChange({hotel: e.target.value })}
+                  value={formData?.hotel}
                 />
               </div>
               <ButtonComponent bgColor="add" type="submit">
